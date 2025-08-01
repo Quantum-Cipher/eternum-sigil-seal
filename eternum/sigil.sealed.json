@@ -1,0 +1,9 @@
+{
+  "project": "Eternum CLI Wallet",
+  "author": "Quantum-Cipher",
+  "sigil": "♾️",
+  "signed": "2025-08-01T04:46:03Z",
+  "origin": "macOS / Xcode",
+  "message": "Only code what the system already knows.",
+  "hash": "sha256:293aea69613fa95df9b73865da443a52c211b4233a8aa8eac31233b2f259c2b1"
+}
