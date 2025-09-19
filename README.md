@@ -24,9 +24,53 @@ SigilVault is a command-line interface (CLI) that solves these problems by retur
 
 SigilVault is a core component of **Eternum**, a regenerative intelligence protocol. It is the tool that allows users to interact with the ecosystem with absolute confidence, ensuring every action is intentional, sovereign, and true.
 
-## License & Philosophy
+# Eternum Sigil Seal
 
-This project is licensed under the **GNU AGPL v3.0**. This was chosen specifically to guarantee that the core tools of the Eternum ecosystem remain open, perpetually auditable, and protected from corporate capture. See the `LICENSE` file for full details.
+**A simple command-line tool for creating and verifying digital signatures on files using Ethereum cryptographic keys.**
+
+This project allows you to use your Ethereum private key to generate a unique, verifiable digital signature for any file, proving its authenticity and integrity.
+
+---
+
+## How It Works
+
+The tool generates a SHA-256 hash of the target file and then uses the `ethers.js` library to sign that hash with a provided Ethereum private key. The resulting signature can be verified by anyone who has the signature, the original file, and the corresponding public Ethereum address.
+
+## Installation
+
+1.  Clone the repository:
+    ```bash
+    git clone [https://github.com/Quantum-Cipher/eternum-sigil-seal.git](https://github.com/Quantum-Cipher/eternum-sigil-seal.git)
+    ```
+2.  Navigate into the project directory:
+    ```bash
+    cd eternum-sigil-seal
+    ```
+3.  Install the necessary dependencies:
+    ```bash
+    npm install
+    ```
+
+## Configuration
+
+Before you can use the tool, you must create a `.env` file to store your private key.
+
+1.  Make a copy of the example file:
+    ```bash
+    cp .env.example .env
+    ```
+2.  Open the new `.env` file in a text editor and replace `YOUR_PRIVATE_KEY_HERE` with your actual Ethereum private key.
+
+    **NOTE:** This file is included in `.gitignore` and will never be committed to the repository.
+
+## Usage
+
+### To Sign a File
+
+Run the `seal.js` script with the path to the file you want to sign:
+
+```bash
+node src/seal.js ./path/to/your/file.txt
 
 ## Next Steps
 
