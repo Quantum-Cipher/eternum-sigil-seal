@@ -1,4 +1,5 @@
-SigilVault is a Swift-based CLI Wallet + Sigil Sealing Engine for Eternum. It protects logic, verifies cryptographic signatures, and manifests intentionality  spellbo# SigilVault 🧿🔐
+SIGIL VAULT 🧿
+Swift-based CLI Wallet + Sigil Sealing Engine for Eternum. It protects logic, verifies cryptographic signatures, and manifests intentionality  spellbo# SigilVault 🧿🔐
 
 🧙‍♂️ SigilVault — Eternum’s Terminal of Truth
 SigilVault is a Swift-based CLI Wallet + Sigil Sealing Engine for Eternum. It protects logic, verifies cryptographic signatures, and manifests intentionality on-chain and off.
